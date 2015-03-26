@@ -48,6 +48,7 @@ type LogEntry struct {
 
 type RPCClient interface {
 	Call(method string, request interface{}, response interface{}) error
+	Close() error
 }
 
 type Scribe interface {
